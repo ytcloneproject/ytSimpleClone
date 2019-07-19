@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/ytcloneproject/ytSimpleClone/issues"
   },
-  "homepage": "https://github.com/ytcloneproject/ytSimpleClone#readme"
+  "homepage": "https://github.com/ytcloneproject/ytSimpleClone#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
