@@ -1,7 +1,11 @@
+const path = require('path')
 const express = require('express')
+
 let app = express()
 const port = 3000
+
 app.set('view engine', 'pug')
+app.use(express.urlencoded())
 
 /* MONGO */
 const MongoClient = require('mongodb').MongoClient
@@ -16,7 +20,14 @@ var clientfunc = function() {
 }
 
 app.get('/', (req, res) => {
-     res.sendFile(path.join(__dirname + '/index.html'));
+     res.sendFile(path.join(__dirname + '/html/index.html'));
+});
+
+app.post('/handler', function (req, res) {
+    const username = req.body.username
+    const password = req.body.password
+
+    res.end()
 });
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
