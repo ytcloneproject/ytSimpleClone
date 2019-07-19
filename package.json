@@ -1,0 +1,20 @@
+{
+  "name": "ytSimpleClone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ytcloneproject/ytSimpleClone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ytcloneproject/ytSimpleClone/issues"
+  },
+  "homepage": "https://github.com/ytcloneproject/ytSimpleClone#readme"
+}
