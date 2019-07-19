@@ -9,7 +9,7 @@ app.use(express.urlencoded())
 
 /* MONGO */
 const MongoClient = require('mongodb').MongoClient
-const uri = "mongodb+srv://user1112:ytSimpleClone397@trial1-q1t8x.mongodb.net/test?retryWrites=true&w=majority"
+const uri = "mongodb+srv://<username>:<password>@trial1-q1t8x.mongodb.net/test?retryWrites=true&w=majority"
 const client = new MongoClient(uri, { useNewUrlParser: true })
 
 var clientfunc = function() {
