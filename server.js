@@ -1,5 +1,6 @@
 const path = require('path')
 const express = require('express')
+const bcrpy = require('bcrypt')
 
 let app = express()
 const port = 3000
@@ -26,6 +27,8 @@ app.get('/', (req, res) => {
 app.post('/handler', function (req, res) {
     const username = req.body.username
     const password = req.body.password
+
+
 
     res.end()
 });
