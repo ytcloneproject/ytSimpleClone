@@ -3,19 +3,96 @@
     <head>
         <meta charset="utf-8">
         <title></title>
+        <style>
+            * {
+                font-family: sans-serif;
+            }
+
+            html, body {
+                margin: 0;
+                padding: 0;
+            }
+
+            fieldset {
+                border: none;
+            }
+
+            main {
+                display: flex;
+                flex-direction: row;
+            }
+
+            form {
+                padding: 7vw;
+                margin-bottom: 2vw;
+                background-color: rgba(0, 0, 0, 0.1);
+                margin: auto;
+                min-width: 300px;
+                text-align: center;
+            }
+
+            legend {
+                font-weight: 700;
+                font-size: 1.6em;
+            }
+
+            header h1 {
+                text-align: center;
+                padding: 6vw;
+                text-transform: uppercase;
+                font-weight: 100;
+            }
+
+            h3 {
+                display: inline-block;
+                font-weight: 400;
+            }
+
+            button[type="submit"] {
+                padding: 1vw;
+                border: none;
+                background-color: rgba(0, 0, 0, 0.2);
+                margin-top: 1vw;
+                transition: 0.2s;
+            }
+
+            button[type="submit"]:hover {
+                transform: scale(1.25);
+            }
+
+            input {
+                padding: 0.35vw;
+                outline: none;
+            }
+
+        </style>
     </head>
     <body>
         <header>
-
+            <h1>Login Page</h1>
         </header>
         <main>
-            <form class="" action="/handler" method="post">
+            <form class="" action="/login" method="post">
                 <fieldset>
+                    <legend>Login</legend>
                     <h3>User:</h3>
-                    <input type="text" name="user" />
-                    <h3>Pass</h3>
-                    <input type="password" id="password" name="password" />
-                    <button type="submit" id="submit">Submit</button>
+                    <input type="text" name="user" /><br>
+                    <h3>Pass:</h3>
+                    <input type="password" id="password" name="password" /><br>
+                    <button type="submit" id="submit">Login</button>
+                </fieldset>
+            </form>
+
+            <form class="" action="/createAccount" method="post">
+                <fieldset>
+                    <legend>Create Account</legend>
+                    <h3>User:</h3>
+                    <input type="text" name="user" /><br>
+                    <h3>Email:</h3>
+                    <input type="email" name="email" /><br>
+                    <h3>Pass:</h3>
+                    <input type="password" id="password" name="password" /><br>
+                    <button type="submit" id="submit">Create Account</button>
                 </fieldset>
             </form>
         </main>
