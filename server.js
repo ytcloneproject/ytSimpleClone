@@ -27,9 +27,7 @@ app.post('/createAccount', function (req, res) {
             const collection = client.db("ytsc").collection("users")
 
             var myobj = { name: username, email: email, password: hash }
-            collection.insertOne(myObj)
-
-            client.close()
+            collection.insert(myObj)
         });
     });
 
