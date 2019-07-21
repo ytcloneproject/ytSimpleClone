@@ -5,12 +5,28 @@
   top: 0;
   left: 0;
   padding: 1em;
-  width: 100%;
+  width: 100vw;
   z-index: 10;
-  background: #BDFFF3
+  background: #0cebeb;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right,
+    0cebeb, #20e3b2, #29ffc6);  /* Chrome 10-25,     Safari 5.1-6 */
+  background: linear-gradient(to right, #0cebeb, #20e3b2, #29ffc6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-box-shadow: 0px 5px 4px 0px rgba(0,0,0,0.35); /* shadow */
+  -moz-box-shadow: 0px 5px 4px 0px rgba(0,0,0,0.35); /* shadow */
+  box-shadow: 0px 5px 4px 0px rgba(0,0,0,0.35); /* shadow */
+}
+
+#logo {
+  font-family: 'Darker Grotesque', sans-serif;
+  list-style: none;
+  font-size: 1.5em;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .nav-list {
+  font-family: 'Darker Grotesque', sans-serif;
   list-style: none;
   font-size: 1.5em;
 }
@@ -35,8 +51,26 @@ a:link {
   text-decoration: none;
 }
 
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+}
+
+h2 {
+  font-family: 'Darker Grotesque', sans-serif;
+  font-size: 2em;
+}
+
+#main {
+padding-top: 100px;
+}
+
 #video-section {
-  padding-top: 100px;
   width: 60%;
   display: block;
   margin-left: auto;
@@ -47,9 +81,20 @@ a:link {
 }
 
 
-#uploader-details {
+#uploader-info {
   width: 60%;
-  display: inline-flex;
+  display: flex;
   justify-content: flex-start;
   align-self: center;
+}
+
+#uploader-name {
+  font-family: 'Darker Grotesque', sans-serif;
+  font-size: 2em;
+}
+
+#upload-date {
+  font-family: 'Darker Grotesque', sans-serif;
+  font-size: 2em;
+  clear: left;
 }
